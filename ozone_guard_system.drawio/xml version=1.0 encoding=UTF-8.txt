@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="27.2.0">
+  <diagram id="ozone-guard-system" name="Ozone Guard System Flow">
+    <mxGraphModel dx="2546" dy="1244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="🛰️ Satellites" style="rounded=1;whiteSpace=wrap;fillColor=#A9CCE3;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="40" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Atmospheric Data Collection" style="rounded=1;whiteSpace=wrap;fillColor=#AED6F1;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="140" y="120" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="🤖 AI Processing Hub" style="rounded=1;whiteSpace=wrap;fillColor=#F9E79F;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="200" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Ozone Prediction Model (CNN-LSTM)" style="rounded=1;whiteSpace=wrap;fillColor=#F7DC6F;fontSize=12;" parent="4" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Anomaly Detection" style="rounded=1;whiteSpace=wrap;fillColor=#F7DC6F;fontSize=12;" parent="4" vertex="1">
+          <mxGeometry x="10" y="60" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Restoration Strategy Generator" style="rounded=1;whiteSpace=wrap;fillColor=#F7DC6F;fontSize=12;" parent="4" vertex="1">
+          <mxGeometry x="10" y="110" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Swarm AI Control System" style="rounded=1;whiteSpace=wrap;fillColor=#85C1E9;fontSize=14;" parent="1" vertex="1">
+          <mxGeometry x="140" y="380" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="🚁 Nanosprayer Drones" style="rounded=1;whiteSpace=wrap;fillColor=#ABEBC6;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="460" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Deploy Restoration Molecules" style="rounded=1;whiteSpace=wrap;fillColor=#82E0AA;fontSize=12;" parent="9" vertex="1">
+          <mxGeometry x="10" y="18.18181818181818" width="280" height="72.72727272727272" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Monitor Local Ozone Levels" style="rounded=1;whiteSpace=wrap;fillColor=#82E0AA;fontSize=12;" parent="9" vertex="1">
+          <mxGeometry x="10" y="109.09090909090908" width="280" height="72.72727272727272" as="geometry" />
+        </mxCell>
+        <mxCell id="MXrD71YL-6c14fqJc-YX-23" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;entryX=0.915;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="12" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="🔄 Feedback Loop" style="rounded=1;whiteSpace=wrap;fillColor=#F5B7B1;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="680" width="350" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Drone Sensor Data → AI Hub" style="rounded=1;whiteSpace=wrap;fillColor=#EC7063;fontSize=12;" parent="12" vertex="1">
+          <mxGeometry x="11.666666666666666" y="17.272727272727273" width="326.66666666666663" height="69.0909090909091" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="AI Adjusts Strategy in Real-Time" style="rounded=1;whiteSpace=wrap;fillColor=#EC7063;fontSize=12;" parent="12" vertex="1">
+          <mxGeometry x="11.666666666666666" y="103.63636363636364" width="326.66666666666663" height="69.0909090909091" as="geometry" />
+        </mxCell>
+        <mxCell id="MXrD71YL-6c14fqJc-YX-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="12" source="12" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" parent="1" source="4" target="8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" parent="1" source="8" target="9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" parent="1" source="9" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;entryX=0.5;entryY=1;entryPerimeter=1;exitX=0.5;exitY=0;exitPerimeter=1;" parent="1" source="12" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="650" as="targetPoint" />
+            <mxPoint x="270" y="250" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

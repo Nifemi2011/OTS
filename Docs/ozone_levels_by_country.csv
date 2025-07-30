@@ -1,0 +1,193 @@
+Country,Estimated_Ozone_Level_DU,Latitude_Range,Notes
+Afghanistan,300,Mid-latitude (33°N),Estimated based on mid-latitude average
+Albania,320,Mid-latitude (41°N),Estimated based on mid-latitude average
+Algeria,280,Equatorial to mid-latitude (28°N),Estimated for lower mid-latitude
+Andorra,320,Mid-latitude (42°N),Estimated based on mid-latitude average
+Angola,260,Equatorial (12°S),Estimated for equatorial region
+Antigua and Barbuda,250,Equatorial (17°N),Estimated for equatorial region
+Argentina,350,High-latitude (34°S),Estimated for southern mid-to-high latitude
+Armenia,320,Mid-latitude (40°N),Estimated based on mid-latitude average
+Australia,340,High-latitude (25°S),Estimated for southern mid-to-high latitude
+Austria,330,Mid-latitude (47°N),Estimated based on mid-latitude average
+Azerbaijan,320,Mid-latitude (40°N),Estimated based on mid-latitude average
+Bahamas,250,Equatorial (24°N),Estimated for equatorial region
+Bahrain,260,Equatorial (26°N),Estimated for equatorial region
+Bangladesh,260,Equatorial (24°N),Estimated for equatorial region
+Barbados,250,Equatorial (13°N),Estimated for equatorial region
+Belarus,340,Mid-latitude (53°N),Estimated for northern mid-latitude
+Belgium,330,Mid-latitude (50°N),Estimated based on mid-latitude average
+Belize,250,Equatorial (17°N),Estimated for equatorial region
+Benin,260,Equatorial (9°N),Estimated for equatorial region
+Bhutan,300,Mid-latitude (27°N),Estimated based on mid-latitude average
+Bolivia,270,Equatorial (16°S),Estimated for equatorial region
+Bosnia and Herzegovina,320,Mid-latitude (44°N),Estimated based on mid-latitude average
+Botswana,270,Equatorial to mid-latitude (22°S),Estimated for equatorial region
+Brazil,270,Equatorial to mid-latitude (10°S),Estimated for equatorial region
+Brunei,250,Equatorial (4°N),Estimated for equatorial region
+Bulgaria,320,Mid-latitude (43°N),Estimated based on mid-latitude average
+Burkina Faso,260,Equatorial (12°N),Estimated for equatorial region
+Burundi,260,Equatorial (3°S),Estimated for equatorial region
+Cabo Verde,260,Equatorial (16°N),Estimated for equatorial region
+Cambodia,250,Equatorial (13°N),Estimated for equatorial region
+Cameroon,260,Equatorial (6°N),Estimated for equatorial region
+Canada,400,High-latitude (60°N),Estimated for polar region; subject to Arctic depletion
+Central African Republic,260,Equatorial (7°N),Estimated for equatorial region
+Chad,260,Equatorial (15°N),Estimated for equatorial region
+Chile,350,High-latitude (30°S),Estimated for southern mid-to-high latitude
+China,320,Mid-latitude (35°N),Estimated for mid-latitude average
+Colombia,250,Equatorial (4°N),Estimated for equatorial region
+Comoros,260,Equatorial (12°S),Estimated for equatorial region
+Congo,260,Equatorial (1°S),Estimated for equatorial region
+Costa Rica,250,Equatorial (10°N),Estimated for equatorial region
+Croatia,320,Mid-latitude (45°N),Estimated based on mid-latitude average
+Cuba,250,Equatorial (21°N),Estimated for equatorial region
+Cyprus,300,Mid-latitude (35°N),Estimated based on mid-latitude average
+Czechia,330,Mid-latitude (50°N),Estimated based on mid-latitude average
+Democratic Republic of the Congo,260,Equatorial (0°),Estimated for equatorial region
+Denmark,380,High-latitude (56°N),Estimated for northern high-latitude
+Djibouti,260,Equatorial (11°N),Estimated for equatorial region
+Dominica,250,Equatorial (15°N),Estimated for equatorial region
+Dominican Republic,250,Equatorial (19°N),Estimated for equatorial region
+Ecuador,250,Equatorial (2°S),Estimated for equatorial region
+Egypt,280,Equatorial to mid-latitude (27°N),Estimated for lower mid-latitude
+El Salvador,250,Equatorial (13°N),Estimated for equatorial region
+Equatorial Guinea,260,Equatorial (2°N),Estimated for equatorial region
+Eritrea,260,Equatorial (15°N),Estimated for equatorial region
+Estonia,350,Mid-latitude (59°N),Estimated for northern mid-latitude
+Eswatini,270,Equatorial to mid-latitude (26°S),Estimated for equatorial region
+Ethiopia,260,Equatorial (9°N),Estimated for equatorial region
+Fiji,260,Equatorial (18°S),Estimated for equatorial region
+Finland,400,High-latitude (64°N),Estimated for polar region; subject to Arctic depletion
+France,330,Mid-latitude (46°N),Estimated based on mid-latitude average
+Gabon,260,Equatorial (1°S),Estimated for equatorial region
+Gambia,260,Equatorial (13°N),Estimated for equatorial region
+Georgia,320,Mid-latitude (42°N),Estimated based on mid-latitude average
+Germany,340,Mid-latitude (51°N),Estimated based on mid-latitude average
+Ghana,260,Equatorial (8°N),Estimated for equatorial region
+Greece,320,Mid-latitude (39°N),Estimated based on mid-latitude average
+Grenada,250,Equatorial (12°N),Estimated for equatorial region
+Guatemala,250,Equatorial (15°N),Estimated for equatorial region
+Guinea,260,Equatorial (11°N),Estimated for equatorial region
+Guinea-Bissau,260,Equatorial (12°N),Estimated for equatorial region
+Guyana,250,Equatorial (5°N),Estimated for equatorial region
+Haiti,250,Equatorial (19°N),Estimated for equatorial region
+Honduras,250,Equatorial (15°N),Estimated for equatorial region
+Hungary,330,Mid-latitude (47°N),Estimated based on mid-latitude average
+Iceland,400,High-latitude (65°N),Estimated for polar region; subject to Arctic depletion
+India,270,Equatorial to mid-latitude (20°N),Estimated for equatorial region
+Indonesia,250,Equatorial (6°S),Estimated for equatorial region
+Iran,300,Mid-latitude (32°N),Estimated based on mid-latitude average
+Iraq,300,Mid-latitude (33°N),Estimated based on mid-latitude average
+Ireland,340,Mid-latitude (53°N),Estimated for northern mid-latitude
+Israel,300,Mid-latitude (31°N),Estimated based on mid-latitude average
+Italy,320,Mid-latitude (42°N),Estimated based on mid-latitude average
+Jamaica,250,Equatorial (18°N),Estimated for equatorial region
+Japan,330,Mid-latitude (36°N),Estimated based on mid-latitude average
+Jordan,300,Mid-latitude (31°N),Estimated based on mid-latitude average
+Kazakhstan,340,Mid-latitude (48°N),Estimated for northern mid-latitude
+Kenya,260,Equatorial (1°S),Estimated for equatorial region
+Kiribati,250,Equatorial (1°N),Estimated for equatorial region
+Kuwait,260,Equatorial (29°N),Estimated for equatorial region
+Kyrgyzstan,320,Mid-latitude (41°N),Estimated based on mid-latitude average
+Laos,250,Equatorial (18°N),Estimated for equatorial region
+Latvia,350,Mid-latitude (57°N),Estimated for northern mid-latitude
+Lebanon,300,Mid-latitude (34°N),Estimated based on mid-latitude average
+Lesotho,270,Equatorial to mid-latitude (29°S),Estimated for equatorial region
+Liberia,260,Equatorial (6°N),Estimated for equatorial region
+Libya,280,Equatorial to mid-latitude (27°N),Estimated for lower mid-latitude
+Liechtenstein,330,Mid-latitude (47°N),Estimated based on mid-latitude average
+Lithuania,340,Mid-latitude (55°N),Estimated for northern mid-latitude
+Luxembourg,330,Mid-latitude (49°N),Estimated based on mid-latitude average
+Madagascar,260,Equatorial (20°S),Estimated for equatorial region
+Malawi,260,Equatorial (13°S),Estimated for equatorial region
+Malaysia,250,Equatorial (4°N),Estimated for equatorial region
+Maldives,250,Equatorial (3°N),Estimated for equatorial region
+Mali,260,Equatorial (17°N),Estimated for equatorial region
+Malta,320,Mid-latitude (36°N),Estimated based on mid-latitude average
+Marshall Islands,250,Equatorial (7°N),Estimated for equatorial region
+Mauritania,260,Equatorial (20°N),Estimated for equatorial region
+Mauritius,260,Equatorial (20°S),Estimated for equatorial region
+Mexico,270,Equatorial to mid-latitude (23°N),Estimated for equatorial region
+Micronesia,250,Equatorial (7°N),Estimated for equatorial region
+Moldova,330,Mid-latitude (47°N),Estimated based on mid-latitude average
+Monaco,320,Mid-latitude (43°N),Estimated based on mid-latitude average
+Mongolia,340,Mid-latitude (46°N),Estimated for northern mid-latitude
+Montenegro,320,Mid-latitude (42°N),Estimated based on mid-latitude average
+Morocco,280,Equatorial to mid-latitude (32°N),Estimated for lower mid-latitude
+Mozambique,260,Equatorial (18°S),Estimated for equatorial region
+Myanmar,260,Equatorial (22°N),Estimated for equatorial region
+Namibia,270,Equatorial to mid-latitude (22°S),Estimated for equatorial region
+Nauru,250,Equatorial (0°S),Estimated for equatorial region
+Nepal,300,Mid-latitude (28°N),Estimated based on mid-latitude average
+Netherlands,340,Mid-latitude (52°N),Estimated for northern mid-latitude
+New Zealand,350,High-latitude (41°S),Estimated for southern mid-to-high latitude
+Nicaragua,250,Equatorial (13°N),Estimated for equatorial region
+Niger,260,Equatorial (16°N),Estimated for equatorial region
+Nigeria,260,Equatorial (10°N),Estimated for equatorial region
+North Korea,330,Mid-latitude (40°N),Estimated based on mid-latitude average
+North Macedonia,320,Mid-latitude (41°N),Estimated based on mid-latitude average
+Norway,400,High-latitude (60°N),Estimated for polar region; subject to Arctic depletion
+Oman,260,Equatorial (21°N),Estimated for equatorial region
+Pakistan,280,Equatorial to mid-latitude (30°N),Estimated for lower mid-latitude
+Palau,250,Equatorial (7°N),Estimated for equatorial region
+Panama,250,Equatorial (9°N),Estimated for equatorial region
+Papua New Guinea,250,Equatorial (6°S),Estimated for equatorial region
+Paraguay,270,Equatorial to mid-latitude (23°S),Estimated for equatorial region
+Peru,270,Equatorial to mid-latitude (10°S),Estimated for equatorial region
+Philippines,250,Equatorial (13°N),Estimated for equatorial region
+Poland,340,Mid-latitude (52°N),Estimated for northern mid-latitude
+Portugal,320,Mid-latitude (39°N),Estimated based on mid-latitude average
+Qatar,260,Equatorial (25°N),Estimated for equatorial region
+Romania,330,Mid-latitude (46°N),Estimated based on mid-latitude average
+Russia,400,High-latitude (60°N),Estimated for polar region; subject to Arctic depletion
+Rwanda,260,Equatorial (2°S),Estimated for equatorial region
+Saint Kitts and Nevis,250,Equatorial (17°N),Estimated for equatorial region
+Saint Lucia,250,Equatorial (13°N),Estimated for equatorial region
+Saint Vincent and the Grenadines,250,Equatorial (13°N),Estimated for equatorial region
+Samoa,250,Equatorial (13°S),Estimated for equatorial region
+San Marino,320,Mid-latitude (43°N),Estimated based on mid-latitude average
+Sao Tome and Principe,260,Equatorial (0°N),Estimated for equatorial region
+Saudi Arabia,270,Equatorial to mid-latitude (25°N),Estimated for equatorial region
+Senegal,260,Equatorial (14°N),Estimated for equatorial region
+Serbia,320,Mid-latitude (44°N),Estimated based on mid-latitude average
+Seychelles,250,Equatorial (4°S),Estimated for equatorial region
+Sierra Leone,260,Equatorial (8°N),Estimated for equatorial region
+Singapore,250,Equatorial (1°N),Estimated for equatorial region
+Slovakia,330,Mid-latitude (48°N),Estimated based on mid-latitude average
+Slovenia,330,Mid-latitude (46°N),Estimated based on mid-latitude average
+Solomon Islands,250,Equatorial (9°S),Estimated for equatorial region
+Somalia,260,Equatorial (10°N),Estimated for equatorial region
+South Africa,300,Mid-latitude (30°S),Estimated based on mid-latitude average
+South Korea,330,Mid-latitude (37°N),Estimated based on mid-latitude average
+South Sudan,260,Equatorial (7°N),Estimated for equatorial region
+Spain,320,Mid-latitude (40°N),Estimated based on mid-latitude average
+Sri Lanka,250,Equatorial (7°N),Estimated for equatorial region
+Sudan,260,Equatorial (15°N),Estimated for equatorial region
+Suriname,250,Equatorial (5°N),Estimated for equatorial region
+Sweden,400,High-latitude (62°N),Estimated for polar region; subject to Arctic depletion
+Switzerland,330,Mid-latitude (47°N),Estimated based on mid-latitude average
+Syria,300,Mid-latitude (35°N),Estimated based on mid-latitude average
+Tajikistan,320,Mid-latitude (38°N),Estimated based on mid-latitude average
+Tanzania,260,Equatorial (6°S),Estimated for equatorial region
+Thailand,250,Equatorial (15°N),Estimated for equatorial region
+Timor-Leste,250,Equatorial (8°S),Estimated for equatorial region
+Togo,260,Equatorial (8°N),Estimated for equatorial region
+Tonga,250,Equatorial (20°S),Estimated for equatorial region
+Trinidad and Tobago,250,Equatorial (10°N),Estimated for equatorial region
+Tunisia,280,Equatorial to mid-latitude (34°N),Estimated for lower mid-latitude
+Turkey,320,Mid-latitude (39°N),Estimated based on mid-latitude average
+Turkmenistan,320,Mid-latitude (40°N),Estimated based on mid-latitude average
+Tuvalu,250,Equatorial (8°S),Estimated for equatorial region
+Uganda,260,Equatorial (1°N),Estimated for equatorial region
+Ukraine,340,Mid-latitude (49°N),Estimated for northern mid-latitude
+United Arab Emirates,260,Equatorial (24°N),Estimated for equatorial region
+United Kingdom,340,Mid-latitude (54°N),Estimated for northern mid-latitude
+United States,350,High-latitude (38°N),Estimated for northern mid-to-high latitude
+Uruguay,340,High-latitude (33°S),Estimated for southern mid-to-high latitude
+Uzbekistan,320,Mid-latitude (41°N),Estimated based on mid-latitude average
+Vanuatu,250,Equatorial (16°S),Estimated for equatorial region
+Venezuela,250,Equatorial (8°N),Estimated for equatorial region
+Vietnam,250,Equatorial (16°N),Estimated for equatorial region
+Yemen,260,Equatorial (15°N),Estimated for equatorial region
+Zambia,260,Equatorial (15°S),Estimated for equatorial region
+Zimbabwe,260,Equatorial (20°S),Estimated for equatorial region

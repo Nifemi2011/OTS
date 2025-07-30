@@ -1,0 +1,25 @@
+1,OTS-001,12702,2.71,313.8,0.011,Releasing ozone-safe compound,False,True
+1,OTS-002,13425,2.76,362.3,0.109,Releasing ozone-safe compound,False,True
+1,OTS-003,14382,2.9,335.3,0.059,Releasing ozone-safe compound,False,True
+1,OTS-004,8738,2.22,350.0,0.136,Deploying ozone enhancer,True,False
+1,OTS-005,13217,1.78,317.5,0.128,Deploying ozone enhancer,True,False
+2,OTS-001,12702,2.73,314.5,0.139,Monitoring,False,True
+2,OTS-002,13425,2.77,363.2,0.123,Monitoring,False,True
+2,OTS-003,14382,2.99,351.1,0.062,Monitoring,False,True
+2,OTS-004,8738,2.2,328.7,0.144,Releasing ozone-safe compound,True,True
+2,OTS-005,13217,1.71,418.5,0.128,Releasing ozone-safe compound,True,True
+3,OTS-001,12702,2.83,301.8,0.08,Monitoring,False,True
+3,OTS-002,13425,2.82,339.7,0.101,Monitoring,False,True
+3,OTS-003,14382,3.16,302.4,0.02,Monitoring,False,True
+3,OTS-004,8738,2.57,343.0,0.091,Monitoring,True,True
+3,OTS-005,13217,2.0,393.8,0.132,Monitoring,True,True
+4,OTS-001,12702,2.93,349.3,0.058,Monitoring,False,True
+4,OTS-002,13425,2.91,343.7,0.07,Monitoring,False,True
+4,OTS-003,14382,3.26,404.8,0.032,Monitoring,False,True
+4,OTS-004,8738,2.85,411.2,0.129,Monitoring,True,True
+4,OTS-005,13217,2.47,316.4,0.016,Monitoring,True,True
+5,OTS-001,12702,2.7,316.3,0.106,Releasing ozone-safe compound,False,True
+5,OTS-002,13425,2.51,418.7,0.143,Releasing ozone-safe compound,False,True
+5,OTS-003,14382,3.14,401.9,0.011,Monitoring,False,False
+5,OTS-004,8738,3.27,324.2,0.054,Monitoring,True,True
+5,OTS-005,13217,2.88,348.3,0.052,Monitoring,True,True

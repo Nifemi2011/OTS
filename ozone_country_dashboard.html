@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0706836109519e2162b76cb0b81c981a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0706836109519e2162b76cb0b81c981a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0706836109519e2162b76cb0b81c981a = L.map(
+                "map_0706836109519e2162b76cb0b81c981a",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_52a41485657c3a9b89a6382de22ec58d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_52a41485657c3a9b89a6382de22ec58d.addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+            var circle_marker_74e0e1ff4180c71db7dd0f1ce8f23ff2 = L.circleMarker(
+                [33.9391, 67.71],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_f2658c0c17b659c5ed79cfcbdf3e9c4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1376d2b9261c9031778882a48445d162 = $(`<div id="html_1376d2b9261c9031778882a48445d162" style="width: 100.0%; height: 100.0%;">         <strong>Afghanistan</strong><br>         Estimated Ozone: 300 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_f2658c0c17b659c5ed79cfcbdf3e9c4d.setContent(html_1376d2b9261c9031778882a48445d162);
+            
+        
+
+        circle_marker_74e0e1ff4180c71db7dd0f1ce8f23ff2.bindPopup(popup_f2658c0c17b659c5ed79cfcbdf3e9c4d)
+        ;
+
+        
+    
+    
+            var circle_marker_815e6454ff101fbb972a571470e55ea2 = L.circleMarker(
+                [28.0339, 1.6596],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_47bfd4f0d0ff7dee3e3ca9c1c2568f62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6335b00ad5a70b63c01327f5d9e62583 = $(`<div id="html_6335b00ad5a70b63c01327f5d9e62583" style="width: 100.0%; height: 100.0%;">         <strong>Algeria</strong><br>         Estimated Ozone: 280 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for lower mid-latitude         </div>`)[0];
+                popup_47bfd4f0d0ff7dee3e3ca9c1c2568f62.setContent(html_6335b00ad5a70b63c01327f5d9e62583);
+            
+        
+
+        circle_marker_815e6454ff101fbb972a571470e55ea2.bindPopup(popup_47bfd4f0d0ff7dee3e3ca9c1c2568f62)
+        ;
+
+        
+    
+    
+            var circle_marker_ae27456057640ea4908667992b6fe351 = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_223ac8bcb609399ee62ef7926468c7cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff100f8e867c30ad08b3a82b947fdb18 = $(`<div id="html_ff100f8e867c30ad08b3a82b947fdb18" style="width: 100.0%; height: 100.0%;">         <strong>Argentina</strong><br>         Estimated Ozone: 350 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for southern mid-to-high latitude         </div>`)[0];
+                popup_223ac8bcb609399ee62ef7926468c7cd.setContent(html_ff100f8e867c30ad08b3a82b947fdb18);
+            
+        
+
+        circle_marker_ae27456057640ea4908667992b6fe351.bindPopup(popup_223ac8bcb609399ee62ef7926468c7cd)
+        ;
+
+        
+    
+    
+            var circle_marker_2fab3eb37aaf6cffb3ebb3870f3a15a7 = L.circleMarker(
+                [-25.2744, 133.7751],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_20792e0a7bc7e9542cd999d323808b56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75e14f995264674ca1075fc1d42b814d = $(`<div id="html_75e14f995264674ca1075fc1d42b814d" style="width: 100.0%; height: 100.0%;">         <strong>Australia</strong><br>         Estimated Ozone: 340 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for southern mid-to-high latitude         </div>`)[0];
+                popup_20792e0a7bc7e9542cd999d323808b56.setContent(html_75e14f995264674ca1075fc1d42b814d);
+            
+        
+
+        circle_marker_2fab3eb37aaf6cffb3ebb3870f3a15a7.bindPopup(popup_20792e0a7bc7e9542cd999d323808b56)
+        ;
+
+        
+    
+    
+            var circle_marker_f6073e8bcbabbaadaedbbe6426c01601 = L.circleMarker(
+                [47.5162, 14.5501],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_c7d13d99b29ed00f7fa7f9c41abe1a40 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7afe7a051b4ccc3492d50270f893faf = $(`<div id="html_b7afe7a051b4ccc3492d50270f893faf" style="width: 100.0%; height: 100.0%;">         <strong>Austria</strong><br>         Estimated Ozone: 330 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_c7d13d99b29ed00f7fa7f9c41abe1a40.setContent(html_b7afe7a051b4ccc3492d50270f893faf);
+            
+        
+
+        circle_marker_f6073e8bcbabbaadaedbbe6426c01601.bindPopup(popup_c7d13d99b29ed00f7fa7f9c41abe1a40)
+        ;
+
+        
+    
+    
+            var circle_marker_5051d6c08230834ada80993c93057d55 = L.circleMarker(
+                [23.685, 90.3563],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_1d41f212b3fb9524cd55ebe4fe4ac387 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e64f89c4058150a957d029501a7f46a2 = $(`<div id="html_e64f89c4058150a957d029501a7f46a2" style="width: 100.0%; height: 100.0%;">         <strong>Bangladesh</strong><br>         Estimated Ozone: 260 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_1d41f212b3fb9524cd55ebe4fe4ac387.setContent(html_e64f89c4058150a957d029501a7f46a2);
+            
+        
+
+        circle_marker_5051d6c08230834ada80993c93057d55.bindPopup(popup_1d41f212b3fb9524cd55ebe4fe4ac387)
+        ;
+
+        
+    
+    
+            var circle_marker_4f8310a4e8dfca602749ad80a478385b = L.circleMarker(
+                [50.5039, 4.4699],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_c7d3adceadb22f0a49a0b40a8bf4dd3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07408ef43e227f56c0f14cbbf161856e = $(`<div id="html_07408ef43e227f56c0f14cbbf161856e" style="width: 100.0%; height: 100.0%;">         <strong>Belgium</strong><br>         Estimated Ozone: 330 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_c7d3adceadb22f0a49a0b40a8bf4dd3a.setContent(html_07408ef43e227f56c0f14cbbf161856e);
+            
+        
+
+        circle_marker_4f8310a4e8dfca602749ad80a478385b.bindPopup(popup_c7d3adceadb22f0a49a0b40a8bf4dd3a)
+        ;
+
+        
+    
+    
+            var circle_marker_5b20181a4302dac743cd271206f6079a = L.circleMarker(
+                [-16.2902, -63.5887],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_2c178ee1253bcaa7725ae38402587f4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_baaa1995cf39a935724996c7d16878f9 = $(`<div id="html_baaa1995cf39a935724996c7d16878f9" style="width: 100.0%; height: 100.0%;">         <strong>Bolivia</strong><br>         Estimated Ozone: 270 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_2c178ee1253bcaa7725ae38402587f4f.setContent(html_baaa1995cf39a935724996c7d16878f9);
+            
+        
+
+        circle_marker_5b20181a4302dac743cd271206f6079a.bindPopup(popup_2c178ee1253bcaa7725ae38402587f4f)
+        ;
+
+        
+    
+    
+            var circle_marker_a2959ae6c80bf099e989f229d3756fa2 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_58355860ab1b2435392e0fd6b7f13d29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd728e9b01f2eac1c4a7e954ea0fb47e = $(`<div id="html_dd728e9b01f2eac1c4a7e954ea0fb47e" style="width: 100.0%; height: 100.0%;">         <strong>Brazil</strong><br>         Estimated Ozone: 270 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_58355860ab1b2435392e0fd6b7f13d29.setContent(html_dd728e9b01f2eac1c4a7e954ea0fb47e);
+            
+        
+
+        circle_marker_a2959ae6c80bf099e989f229d3756fa2.bindPopup(popup_58355860ab1b2435392e0fd6b7f13d29)
+        ;
+
+        
+    
+    
+            var circle_marker_2632f92d0f2ea9f34d4cc1d36556b8d8 = L.circleMarker(
+                [56.1304, -106.3468],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_c43681b6864a2a2289a5a17c0d4f5177 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f30560df056c4bc7bb0d07884f2c4746 = $(`<div id="html_f30560df056c4bc7bb0d07884f2c4746" style="width: 100.0%; height: 100.0%;">         <strong>Canada</strong><br>         Estimated Ozone: 400 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for polar region; subject to Arctic depletion         </div>`)[0];
+                popup_c43681b6864a2a2289a5a17c0d4f5177.setContent(html_f30560df056c4bc7bb0d07884f2c4746);
+            
+        
+
+        circle_marker_2632f92d0f2ea9f34d4cc1d36556b8d8.bindPopup(popup_c43681b6864a2a2289a5a17c0d4f5177)
+        ;
+
+        
+    
+    
+            var circle_marker_7c86e4624e713ae0c5a0c30a10f3ffd7 = L.circleMarker(
+                [-35.6751, -71.543],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_d382576441da134d6cb3ecc2add0714d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ceaa2908c4b0e173a8345e6f70497fb = $(`<div id="html_8ceaa2908c4b0e173a8345e6f70497fb" style="width: 100.0%; height: 100.0%;">         <strong>Chile</strong><br>         Estimated Ozone: 350 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for southern mid-to-high latitude         </div>`)[0];
+                popup_d382576441da134d6cb3ecc2add0714d.setContent(html_8ceaa2908c4b0e173a8345e6f70497fb);
+            
+        
+
+        circle_marker_7c86e4624e713ae0c5a0c30a10f3ffd7.bindPopup(popup_d382576441da134d6cb3ecc2add0714d)
+        ;
+
+        
+    
+    
+            var circle_marker_22329ef343f06960916405f101f9ff00 = L.circleMarker(
+                [35.8617, 104.1954],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_7a4f74219660bdc4107adeb6a506f0df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fdf4181ac214b3ebcf0cd048d7b04b48 = $(`<div id="html_fdf4181ac214b3ebcf0cd048d7b04b48" style="width: 100.0%; height: 100.0%;">         <strong>China</strong><br>         Estimated Ozone: 320 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for mid-latitude average         </div>`)[0];
+                popup_7a4f74219660bdc4107adeb6a506f0df.setContent(html_fdf4181ac214b3ebcf0cd048d7b04b48);
+            
+        
+
+        circle_marker_22329ef343f06960916405f101f9ff00.bindPopup(popup_7a4f74219660bdc4107adeb6a506f0df)
+        ;
+
+        
+    
+    
+            var circle_marker_999a0ec9dce25c491248e263a162fcf4 = L.circleMarker(
+                [4.5709, -74.2973],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_f87c4408858898c6b76635437371fc5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2fc570121b93d76fa74576646e7059db = $(`<div id="html_2fc570121b93d76fa74576646e7059db" style="width: 100.0%; height: 100.0%;">         <strong>Colombia</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_f87c4408858898c6b76635437371fc5c.setContent(html_2fc570121b93d76fa74576646e7059db);
+            
+        
+
+        circle_marker_999a0ec9dce25c491248e263a162fcf4.bindPopup(popup_f87c4408858898c6b76635437371fc5c)
+        ;
+
+        
+    
+    
+            var circle_marker_64f414c2e1af08282c71d38645aa1757 = L.circleMarker(
+                [21.5218, -77.7812],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_df9f3809ddc2557aa43d48fd356672b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_29ddb17b6014c8c9f7f90e771d4792b5 = $(`<div id="html_29ddb17b6014c8c9f7f90e771d4792b5" style="width: 100.0%; height: 100.0%;">         <strong>Cuba</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_df9f3809ddc2557aa43d48fd356672b9.setContent(html_29ddb17b6014c8c9f7f90e771d4792b5);
+            
+        
+
+        circle_marker_64f414c2e1af08282c71d38645aa1757.bindPopup(popup_df9f3809ddc2557aa43d48fd356672b9)
+        ;
+
+        
+    
+    
+            var circle_marker_2f47147fc0d35c1503b0699b7883c271 = L.circleMarker(
+                [26.8206, 30.8025],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_486b9c34c2a80477923642365b64975a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1780840e2e94848557e487bd6d7d6f88 = $(`<div id="html_1780840e2e94848557e487bd6d7d6f88" style="width: 100.0%; height: 100.0%;">         <strong>Egypt</strong><br>         Estimated Ozone: 280 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for lower mid-latitude         </div>`)[0];
+                popup_486b9c34c2a80477923642365b64975a.setContent(html_1780840e2e94848557e487bd6d7d6f88);
+            
+        
+
+        circle_marker_2f47147fc0d35c1503b0699b7883c271.bindPopup(popup_486b9c34c2a80477923642365b64975a)
+        ;
+
+        
+    
+    
+            var circle_marker_93562cd6401461aad6b54b7154a4a18b = L.circleMarker(
+                [9.145, 40.4897],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_1931767d70c6eb16eaa7362cf84c73cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9227c54c3682c0e10447c2df4e92ca9a = $(`<div id="html_9227c54c3682c0e10447c2df4e92ca9a" style="width: 100.0%; height: 100.0%;">         <strong>Ethiopia</strong><br>         Estimated Ozone: 260 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_1931767d70c6eb16eaa7362cf84c73cb.setContent(html_9227c54c3682c0e10447c2df4e92ca9a);
+            
+        
+
+        circle_marker_93562cd6401461aad6b54b7154a4a18b.bindPopup(popup_1931767d70c6eb16eaa7362cf84c73cb)
+        ;
+
+        
+    
+    
+            var circle_marker_f2cf9090b2a91a50b68f161e81dc6357 = L.circleMarker(
+                [46.2276, 2.2137],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_0131d054a0721edf5becd9ae8010e11d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1fd129b72b4f88113db75fa5869bf15 = $(`<div id="html_b1fd129b72b4f88113db75fa5869bf15" style="width: 100.0%; height: 100.0%;">         <strong>France</strong><br>         Estimated Ozone: 330 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_0131d054a0721edf5becd9ae8010e11d.setContent(html_b1fd129b72b4f88113db75fa5869bf15);
+            
+        
+
+        circle_marker_f2cf9090b2a91a50b68f161e81dc6357.bindPopup(popup_0131d054a0721edf5becd9ae8010e11d)
+        ;
+
+        
+    
+    
+            var circle_marker_659bb384ba138cf4ad99290a617f588c = L.circleMarker(
+                [51.1657, 10.4515],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_67bec631a14e7d9093027ff022c249a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_849f50e6b3763a9bed4d27fe584ed828 = $(`<div id="html_849f50e6b3763a9bed4d27fe584ed828" style="width: 100.0%; height: 100.0%;">         <strong>Germany</strong><br>         Estimated Ozone: 340 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_67bec631a14e7d9093027ff022c249a1.setContent(html_849f50e6b3763a9bed4d27fe584ed828);
+            
+        
+
+        circle_marker_659bb384ba138cf4ad99290a617f588c.bindPopup(popup_67bec631a14e7d9093027ff022c249a1)
+        ;
+
+        
+    
+    
+            var circle_marker_5ed4fc05563aa7f94a47e04677fe7fe5 = L.circleMarker(
+                [7.9465, -1.0232],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_58eab33401404194166c8902406dd22c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d540aea6f0bf0b161f06197fd2c1fd4c = $(`<div id="html_d540aea6f0bf0b161f06197fd2c1fd4c" style="width: 100.0%; height: 100.0%;">         <strong>Ghana</strong><br>         Estimated Ozone: 260 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_58eab33401404194166c8902406dd22c.setContent(html_d540aea6f0bf0b161f06197fd2c1fd4c);
+            
+        
+
+        circle_marker_5ed4fc05563aa7f94a47e04677fe7fe5.bindPopup(popup_58eab33401404194166c8902406dd22c)
+        ;
+
+        
+    
+    
+            var circle_marker_c7148f183ec429af401649256e16433e = L.circleMarker(
+                [39.0742, 21.8243],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_ecdb7debb294363c3b8ce8037f17cd38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a34ba1b50d420d017c4cbff7e156d326 = $(`<div id="html_a34ba1b50d420d017c4cbff7e156d326" style="width: 100.0%; height: 100.0%;">         <strong>Greece</strong><br>         Estimated Ozone: 320 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_ecdb7debb294363c3b8ce8037f17cd38.setContent(html_a34ba1b50d420d017c4cbff7e156d326);
+            
+        
+
+        circle_marker_c7148f183ec429af401649256e16433e.bindPopup(popup_ecdb7debb294363c3b8ce8037f17cd38)
+        ;
+
+        
+    
+    
+            var circle_marker_3f990858f3786bdf060013599c53eebb = L.circleMarker(
+                [20.5937, 78.9629],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_947b3e7d47fd841ccef9079f6e854d7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4987d428852332a4caedb54dc6be5fce = $(`<div id="html_4987d428852332a4caedb54dc6be5fce" style="width: 100.0%; height: 100.0%;">         <strong>India</strong><br>         Estimated Ozone: 270 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_947b3e7d47fd841ccef9079f6e854d7a.setContent(html_4987d428852332a4caedb54dc6be5fce);
+            
+        
+
+        circle_marker_3f990858f3786bdf060013599c53eebb.bindPopup(popup_947b3e7d47fd841ccef9079f6e854d7a)
+        ;
+
+        
+    
+    
+            var circle_marker_f43ebe87379a2e7078dcef57429a7723 = L.circleMarker(
+                [-0.7893, 113.9213],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_be0c1c6cb54338adf94a1c923e09cc92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c2db2aa88dbaa49680f6e9527661a81 = $(`<div id="html_3c2db2aa88dbaa49680f6e9527661a81" style="width: 100.0%; height: 100.0%;">         <strong>Indonesia</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_be0c1c6cb54338adf94a1c923e09cc92.setContent(html_3c2db2aa88dbaa49680f6e9527661a81);
+            
+        
+
+        circle_marker_f43ebe87379a2e7078dcef57429a7723.bindPopup(popup_be0c1c6cb54338adf94a1c923e09cc92)
+        ;
+
+        
+    
+    
+            var circle_marker_7ae32c02c866b9ff855415958f41f78f = L.circleMarker(
+                [32.4279, 53.688],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_7423d0dc7e411f461a9b726a8f8a9815 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_981488e16a2a043ec48840ca7e8e87fd = $(`<div id="html_981488e16a2a043ec48840ca7e8e87fd" style="width: 100.0%; height: 100.0%;">         <strong>Iran</strong><br>         Estimated Ozone: 300 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_7423d0dc7e411f461a9b726a8f8a9815.setContent(html_981488e16a2a043ec48840ca7e8e87fd);
+            
+        
+
+        circle_marker_7ae32c02c866b9ff855415958f41f78f.bindPopup(popup_7423d0dc7e411f461a9b726a8f8a9815)
+        ;
+
+        
+    
+    
+            var circle_marker_95f51e6dff6fe4034da9037c91ac1e54 = L.circleMarker(
+                [33.2232, 43.6793],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_f755244710705b77d4d42afc6f8a58e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_08d9570819b9ff8319c74fdf03d6a720 = $(`<div id="html_08d9570819b9ff8319c74fdf03d6a720" style="width: 100.0%; height: 100.0%;">         <strong>Iraq</strong><br>         Estimated Ozone: 300 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_f755244710705b77d4d42afc6f8a58e3.setContent(html_08d9570819b9ff8319c74fdf03d6a720);
+            
+        
+
+        circle_marker_95f51e6dff6fe4034da9037c91ac1e54.bindPopup(popup_f755244710705b77d4d42afc6f8a58e3)
+        ;
+
+        
+    
+    
+            var circle_marker_6ea9faaf7a91cd38032fcdb0e60cbc3a = L.circleMarker(
+                [41.8719, 12.5674],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_885b7db3cd72ce24ed98e907a40726d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ccc742867463df3270a2526d4e97efd = $(`<div id="html_9ccc742867463df3270a2526d4e97efd" style="width: 100.0%; height: 100.0%;">         <strong>Italy</strong><br>         Estimated Ozone: 320 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_885b7db3cd72ce24ed98e907a40726d6.setContent(html_9ccc742867463df3270a2526d4e97efd);
+            
+        
+
+        circle_marker_6ea9faaf7a91cd38032fcdb0e60cbc3a.bindPopup(popup_885b7db3cd72ce24ed98e907a40726d6)
+        ;
+
+        
+    
+    
+            var circle_marker_cb8ad7edba6aa48a1fb4c745cac09be4 = L.circleMarker(
+                [36.2048, 138.2529],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_450616ec7eb6bcab8413b4851e5a82f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e7b4d81f96519c14c27568c8a8e3a8b = $(`<div id="html_3e7b4d81f96519c14c27568c8a8e3a8b" style="width: 100.0%; height: 100.0%;">         <strong>Japan</strong><br>         Estimated Ozone: 330 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_450616ec7eb6bcab8413b4851e5a82f7.setContent(html_3e7b4d81f96519c14c27568c8a8e3a8b);
+            
+        
+
+        circle_marker_cb8ad7edba6aa48a1fb4c745cac09be4.bindPopup(popup_450616ec7eb6bcab8413b4851e5a82f7)
+        ;
+
+        
+    
+    
+            var circle_marker_f15089787eb978f3f6c48564e273b199 = L.circleMarker(
+                [0.0236, 37.9062],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_7471430f59cf5c766d7e813cd9cc4689 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_238a9f8f407336921e21d74eaafbb773 = $(`<div id="html_238a9f8f407336921e21d74eaafbb773" style="width: 100.0%; height: 100.0%;">         <strong>Kenya</strong><br>         Estimated Ozone: 260 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_7471430f59cf5c766d7e813cd9cc4689.setContent(html_238a9f8f407336921e21d74eaafbb773);
+            
+        
+
+        circle_marker_f15089787eb978f3f6c48564e273b199.bindPopup(popup_7471430f59cf5c766d7e813cd9cc4689)
+        ;
+
+        
+    
+    
+            var circle_marker_2c30cb1d2b83e94d059cb14a3a26cf93 = L.circleMarker(
+                [4.2105, 101.9758],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_a831563c46c0bc3d5cd2ac8b2dd3dc57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0242819a2a7170865c153ae19d23104 = $(`<div id="html_e0242819a2a7170865c153ae19d23104" style="width: 100.0%; height: 100.0%;">         <strong>Malaysia</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_a831563c46c0bc3d5cd2ac8b2dd3dc57.setContent(html_e0242819a2a7170865c153ae19d23104);
+            
+        
+
+        circle_marker_2c30cb1d2b83e94d059cb14a3a26cf93.bindPopup(popup_a831563c46c0bc3d5cd2ac8b2dd3dc57)
+        ;
+
+        
+    
+    
+            var circle_marker_fa2cf86f59952256814e3a999fee4482 = L.circleMarker(
+                [23.6345, -102.5528],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_bfefb0bac94c7183fbf4082d8bdf9637 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cf4ac076b6cdca47834b7c31ad070e5 = $(`<div id="html_5cf4ac076b6cdca47834b7c31ad070e5" style="width: 100.0%; height: 100.0%;">         <strong>Mexico</strong><br>         Estimated Ozone: 270 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_bfefb0bac94c7183fbf4082d8bdf9637.setContent(html_5cf4ac076b6cdca47834b7c31ad070e5);
+            
+        
+
+        circle_marker_fa2cf86f59952256814e3a999fee4482.bindPopup(popup_bfefb0bac94c7183fbf4082d8bdf9637)
+        ;
+
+        
+    
+    
+            var circle_marker_4d4adaecb7adc55b65e0e1e9a709fb9f = L.circleMarker(
+                [31.7917, -7.0926],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_81456494dc0ecc9885e1f042d79185cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8d4aadd3ba8df92b1abe106631f761a = $(`<div id="html_a8d4aadd3ba8df92b1abe106631f761a" style="width: 100.0%; height: 100.0%;">         <strong>Morocco</strong><br>         Estimated Ozone: 280 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for lower mid-latitude         </div>`)[0];
+                popup_81456494dc0ecc9885e1f042d79185cc.setContent(html_a8d4aadd3ba8df92b1abe106631f761a);
+            
+        
+
+        circle_marker_4d4adaecb7adc55b65e0e1e9a709fb9f.bindPopup(popup_81456494dc0ecc9885e1f042d79185cc)
+        ;
+
+        
+    
+    
+            var circle_marker_088cec999eb67b6fcbb16c22e913cc28 = L.circleMarker(
+                [52.1326, 5.2913],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_b63afea3d8ff178f6152302d5f599f5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b99b4da7b18c6b8d4ccb58118195d44 = $(`<div id="html_9b99b4da7b18c6b8d4ccb58118195d44" style="width: 100.0%; height: 100.0%;">         <strong>Netherlands</strong><br>         Estimated Ozone: 340 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for northern mid-latitude         </div>`)[0];
+                popup_b63afea3d8ff178f6152302d5f599f5e.setContent(html_9b99b4da7b18c6b8d4ccb58118195d44);
+            
+        
+
+        circle_marker_088cec999eb67b6fcbb16c22e913cc28.bindPopup(popup_b63afea3d8ff178f6152302d5f599f5e)
+        ;
+
+        
+    
+    
+            var circle_marker_7a65331104000911137bef5de55468fa = L.circleMarker(
+                [-40.9006, 174.886],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_fb8db31025160b4c32ff45951b6b9387 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55ee0e56609aab284a00e8af1631e783 = $(`<div id="html_55ee0e56609aab284a00e8af1631e783" style="width: 100.0%; height: 100.0%;">         <strong>New Zealand</strong><br>         Estimated Ozone: 350 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for southern mid-to-high latitude         </div>`)[0];
+                popup_fb8db31025160b4c32ff45951b6b9387.setContent(html_55ee0e56609aab284a00e8af1631e783);
+            
+        
+
+        circle_marker_7a65331104000911137bef5de55468fa.bindPopup(popup_fb8db31025160b4c32ff45951b6b9387)
+        ;
+
+        
+    
+    
+            var circle_marker_5e63d915575396813f51b8088bb19c65 = L.circleMarker(
+                [9.082, 8.6753],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_ad0d68747335f74f2d2fd1aa0d7e1d7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee8f98d384205939e8268359186f50c6 = $(`<div id="html_ee8f98d384205939e8268359186f50c6" style="width: 100.0%; height: 100.0%;">         <strong>Nigeria</strong><br>         Estimated Ozone: 260 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_ad0d68747335f74f2d2fd1aa0d7e1d7a.setContent(html_ee8f98d384205939e8268359186f50c6);
+            
+        
+
+        circle_marker_5e63d915575396813f51b8088bb19c65.bindPopup(popup_ad0d68747335f74f2d2fd1aa0d7e1d7a)
+        ;
+
+        
+    
+    
+            var circle_marker_2e447e5138a0ff5b6a456c8b37223570 = L.circleMarker(
+                [60.472, 8.4689],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_cd0dccba1f75de74ee2a36f5e43fb837 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_018f964180dbc79015adab80ea8e0d56 = $(`<div id="html_018f964180dbc79015adab80ea8e0d56" style="width: 100.0%; height: 100.0%;">         <strong>Norway</strong><br>         Estimated Ozone: 400 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for polar region; subject to Arctic depletion         </div>`)[0];
+                popup_cd0dccba1f75de74ee2a36f5e43fb837.setContent(html_018f964180dbc79015adab80ea8e0d56);
+            
+        
+
+        circle_marker_2e447e5138a0ff5b6a456c8b37223570.bindPopup(popup_cd0dccba1f75de74ee2a36f5e43fb837)
+        ;
+
+        
+    
+    
+            var circle_marker_e51254aa0e8cfe6eabe00252cec34008 = L.circleMarker(
+                [30.3753, 69.3451],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_1746dd74f910c03b40b948504d3a9620 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6aaffda378df408dfc2d537fa1f8424d = $(`<div id="html_6aaffda378df408dfc2d537fa1f8424d" style="width: 100.0%; height: 100.0%;">         <strong>Pakistan</strong><br>         Estimated Ozone: 280 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for lower mid-latitude         </div>`)[0];
+                popup_1746dd74f910c03b40b948504d3a9620.setContent(html_6aaffda378df408dfc2d537fa1f8424d);
+            
+        
+
+        circle_marker_e51254aa0e8cfe6eabe00252cec34008.bindPopup(popup_1746dd74f910c03b40b948504d3a9620)
+        ;
+
+        
+    
+    
+            var circle_marker_6991659c06041b38b49025eba50cfaeb = L.circleMarker(
+                [-9.19, -75.0152],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_c6a65bc696d18c9ca0860bbcec36ecf7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c936406545163be4d1ad66fd7bde5b8 = $(`<div id="html_0c936406545163be4d1ad66fd7bde5b8" style="width: 100.0%; height: 100.0%;">         <strong>Peru</strong><br>         Estimated Ozone: 270 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_c6a65bc696d18c9ca0860bbcec36ecf7.setContent(html_0c936406545163be4d1ad66fd7bde5b8);
+            
+        
+
+        circle_marker_6991659c06041b38b49025eba50cfaeb.bindPopup(popup_c6a65bc696d18c9ca0860bbcec36ecf7)
+        ;
+
+        
+    
+    
+            var circle_marker_9e010f9b1633646e57f674d83558efc0 = L.circleMarker(
+                [12.8797, 121.774],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_df2aa3e0a5c1dcef50b9a226527ee4c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6071d5373613cdb0125626fc5f69f3e2 = $(`<div id="html_6071d5373613cdb0125626fc5f69f3e2" style="width: 100.0%; height: 100.0%;">         <strong>Philippines</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_df2aa3e0a5c1dcef50b9a226527ee4c7.setContent(html_6071d5373613cdb0125626fc5f69f3e2);
+            
+        
+
+        circle_marker_9e010f9b1633646e57f674d83558efc0.bindPopup(popup_df2aa3e0a5c1dcef50b9a226527ee4c7)
+        ;
+
+        
+    
+    
+            var circle_marker_00f7e87ea2f9b4b99d5e23d934574dde = L.circleMarker(
+                [51.9194, 19.1451],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_e5ecd2e21866f242e2cb9f7d8cd9bcba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4e3f9bae0d455c3786c538d5c610005 = $(`<div id="html_e4e3f9bae0d455c3786c538d5c610005" style="width: 100.0%; height: 100.0%;">         <strong>Poland</strong><br>         Estimated Ozone: 340 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for northern mid-latitude         </div>`)[0];
+                popup_e5ecd2e21866f242e2cb9f7d8cd9bcba.setContent(html_e4e3f9bae0d455c3786c538d5c610005);
+            
+        
+
+        circle_marker_00f7e87ea2f9b4b99d5e23d934574dde.bindPopup(popup_e5ecd2e21866f242e2cb9f7d8cd9bcba)
+        ;
+
+        
+    
+    
+            var circle_marker_c029898ab1c819aa4beff53e0a74476e = L.circleMarker(
+                [39.3999, -8.2245],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_8c87c7aedd45b39745f3c4d6ac0cc02e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d46770e5ab36783f29dbe271a078c88f = $(`<div id="html_d46770e5ab36783f29dbe271a078c88f" style="width: 100.0%; height: 100.0%;">         <strong>Portugal</strong><br>         Estimated Ozone: 320 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_8c87c7aedd45b39745f3c4d6ac0cc02e.setContent(html_d46770e5ab36783f29dbe271a078c88f);
+            
+        
+
+        circle_marker_c029898ab1c819aa4beff53e0a74476e.bindPopup(popup_8c87c7aedd45b39745f3c4d6ac0cc02e)
+        ;
+
+        
+    
+    
+            var circle_marker_32dc728fbae18bd103e98ad6b55b6e6a = L.circleMarker(
+                [61.524, 105.3188],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_26f7de56b2c6a5cd2b965afb763f9691 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25364315bcd3b88810cde97d5b9b5df9 = $(`<div id="html_25364315bcd3b88810cde97d5b9b5df9" style="width: 100.0%; height: 100.0%;">         <strong>Russia</strong><br>         Estimated Ozone: 400 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for polar region; subject to Arctic depletion         </div>`)[0];
+                popup_26f7de56b2c6a5cd2b965afb763f9691.setContent(html_25364315bcd3b88810cde97d5b9b5df9);
+            
+        
+
+        circle_marker_32dc728fbae18bd103e98ad6b55b6e6a.bindPopup(popup_26f7de56b2c6a5cd2b965afb763f9691)
+        ;
+
+        
+    
+    
+            var circle_marker_eafce5b0585bc230fd79ac3e742b4a1f = L.circleMarker(
+                [23.8859, 45.0792],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_81991910788063b9b55498068bc2c8ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e511033ce47dc86055c1e4ac9b93b88 = $(`<div id="html_0e511033ce47dc86055c1e4ac9b93b88" style="width: 100.0%; height: 100.0%;">         <strong>Saudi Arabia</strong><br>         Estimated Ozone: 270 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_81991910788063b9b55498068bc2c8ca.setContent(html_0e511033ce47dc86055c1e4ac9b93b88);
+            
+        
+
+        circle_marker_eafce5b0585bc230fd79ac3e742b4a1f.bindPopup(popup_81991910788063b9b55498068bc2c8ca)
+        ;
+
+        
+    
+    
+            var circle_marker_c217999167972b4d28c12cc82256d3a0 = L.circleMarker(
+                [-30.5595, 22.9375],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_5729eea0497a0c8f557b63f5c5ecaa62 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e19b2a53deb01223d1e5a127cf0e655 = $(`<div id="html_4e19b2a53deb01223d1e5a127cf0e655" style="width: 100.0%; height: 100.0%;">         <strong>South Africa</strong><br>         Estimated Ozone: 300 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_5729eea0497a0c8f557b63f5c5ecaa62.setContent(html_4e19b2a53deb01223d1e5a127cf0e655);
+            
+        
+
+        circle_marker_c217999167972b4d28c12cc82256d3a0.bindPopup(popup_5729eea0497a0c8f557b63f5c5ecaa62)
+        ;
+
+        
+    
+    
+            var circle_marker_acfa44fe3543335aa58c51d216e9c456 = L.circleMarker(
+                [35.9078, 127.7669],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_47fb7a58bd333e63e0b1041d308c52fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b6b1d1c0504e92eacbdf3ed6591c26a = $(`<div id="html_9b6b1d1c0504e92eacbdf3ed6591c26a" style="width: 100.0%; height: 100.0%;">         <strong>South Korea</strong><br>         Estimated Ozone: 330 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_47fb7a58bd333e63e0b1041d308c52fc.setContent(html_9b6b1d1c0504e92eacbdf3ed6591c26a);
+            
+        
+
+        circle_marker_acfa44fe3543335aa58c51d216e9c456.bindPopup(popup_47fb7a58bd333e63e0b1041d308c52fc)
+        ;
+
+        
+    
+    
+            var circle_marker_70ebdab024e263f8cb704058bc09a307 = L.circleMarker(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_8940c0bdceecfed0881a7bab73ee296e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25cc6c88abe3701cf6497bb3aab3002b = $(`<div id="html_25cc6c88abe3701cf6497bb3aab3002b" style="width: 100.0%; height: 100.0%;">         <strong>Spain</strong><br>         Estimated Ozone: 320 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_8940c0bdceecfed0881a7bab73ee296e.setContent(html_25cc6c88abe3701cf6497bb3aab3002b);
+            
+        
+
+        circle_marker_70ebdab024e263f8cb704058bc09a307.bindPopup(popup_8940c0bdceecfed0881a7bab73ee296e)
+        ;
+
+        
+    
+    
+            var circle_marker_92c19e1d731b215ab1bbf557c296309c = L.circleMarker(
+                [12.8628, 30.2176],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_42d97553af244f472e987b4808e2b8a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78f5b5d4c2542576d0d213ac88031015 = $(`<div id="html_78f5b5d4c2542576d0d213ac88031015" style="width: 100.0%; height: 100.0%;">         <strong>Sudan</strong><br>         Estimated Ozone: 260 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_42d97553af244f472e987b4808e2b8a8.setContent(html_78f5b5d4c2542576d0d213ac88031015);
+            
+        
+
+        circle_marker_92c19e1d731b215ab1bbf557c296309c.bindPopup(popup_42d97553af244f472e987b4808e2b8a8)
+        ;
+
+        
+    
+    
+            var circle_marker_d81bb0726ad17ff8fc616bb8306d325a = L.circleMarker(
+                [60.1282, 18.6435],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_8e78f426d7aaf2f3308e22637fe0184f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d1f649f806039b297c8cc74b7b462f0 = $(`<div id="html_5d1f649f806039b297c8cc74b7b462f0" style="width: 100.0%; height: 100.0%;">         <strong>Sweden</strong><br>         Estimated Ozone: 400 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for polar region; subject to Arctic depletion         </div>`)[0];
+                popup_8e78f426d7aaf2f3308e22637fe0184f.setContent(html_5d1f649f806039b297c8cc74b7b462f0);
+            
+        
+
+        circle_marker_d81bb0726ad17ff8fc616bb8306d325a.bindPopup(popup_8e78f426d7aaf2f3308e22637fe0184f)
+        ;
+
+        
+    
+    
+            var circle_marker_bdc56ef57267ce121ae8bfcbfe77c2f8 = L.circleMarker(
+                [46.8182, 8.2275],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_e91a5a6656506fb1c933edab0cb97f30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5c17e9dd5cda1183a5da106eea09702 = $(`<div id="html_f5c17e9dd5cda1183a5da106eea09702" style="width: 100.0%; height: 100.0%;">         <strong>Switzerland</strong><br>         Estimated Ozone: 330 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_e91a5a6656506fb1c933edab0cb97f30.setContent(html_f5c17e9dd5cda1183a5da106eea09702);
+            
+        
+
+        circle_marker_bdc56ef57267ce121ae8bfcbfe77c2f8.bindPopup(popup_e91a5a6656506fb1c933edab0cb97f30)
+        ;
+
+        
+    
+    
+            var circle_marker_a3d54399ac1149d8260ddfe64741e6c0 = L.circleMarker(
+                [15.87, 100.9925],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_b8c748be42315e670647bd10076cd9ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86cc836cfaca0096019b4a55c94e2925 = $(`<div id="html_86cc836cfaca0096019b4a55c94e2925" style="width: 100.0%; height: 100.0%;">         <strong>Thailand</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_b8c748be42315e670647bd10076cd9ea.setContent(html_86cc836cfaca0096019b4a55c94e2925);
+            
+        
+
+        circle_marker_a3d54399ac1149d8260ddfe64741e6c0.bindPopup(popup_b8c748be42315e670647bd10076cd9ea)
+        ;
+
+        
+    
+    
+            var circle_marker_1baebe32a3a2a5d06daa2c0a8c226166 = L.circleMarker(
+                [38.9637, 35.2433],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_ca55c6e2421bb3be324931742cc6cf00 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76cfcec8e66702b6902b35ae928d5d85 = $(`<div id="html_76cfcec8e66702b6902b35ae928d5d85" style="width: 100.0%; height: 100.0%;">         <strong>Turkey</strong><br>         Estimated Ozone: 320 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated based on mid-latitude average         </div>`)[0];
+                popup_ca55c6e2421bb3be324931742cc6cf00.setContent(html_76cfcec8e66702b6902b35ae928d5d85);
+            
+        
+
+        circle_marker_1baebe32a3a2a5d06daa2c0a8c226166.bindPopup(popup_ca55c6e2421bb3be324931742cc6cf00)
+        ;
+
+        
+    
+    
+            var circle_marker_4978a9d830f146ac5457187a9b88a469 = L.circleMarker(
+                [48.3794, 31.1656],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_54cc3d6e5144a03f97d23541cfe2fa91 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9aa44ff918d0e1aa8d05d0d13d832766 = $(`<div id="html_9aa44ff918d0e1aa8d05d0d13d832766" style="width: 100.0%; height: 100.0%;">         <strong>Ukraine</strong><br>         Estimated Ozone: 340 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for northern mid-latitude         </div>`)[0];
+                popup_54cc3d6e5144a03f97d23541cfe2fa91.setContent(html_9aa44ff918d0e1aa8d05d0d13d832766);
+            
+        
+
+        circle_marker_4978a9d830f146ac5457187a9b88a469.bindPopup(popup_54cc3d6e5144a03f97d23541cfe2fa91)
+        ;
+
+        
+    
+    
+            var circle_marker_459725801af982111abda79c2e175ede = L.circleMarker(
+                [55.3781, -3.436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_288495e338f5142893222f19b760d7bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9bd8bba91ed5981ae32f74325e2e3eb = $(`<div id="html_e9bd8bba91ed5981ae32f74325e2e3eb" style="width: 100.0%; height: 100.0%;">         <strong>United Kingdom</strong><br>         Estimated Ozone: 340 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for northern mid-latitude         </div>`)[0];
+                popup_288495e338f5142893222f19b760d7bb.setContent(html_e9bd8bba91ed5981ae32f74325e2e3eb);
+            
+        
+
+        circle_marker_459725801af982111abda79c2e175ede.bindPopup(popup_288495e338f5142893222f19b760d7bb)
+        ;
+
+        
+    
+    
+            var circle_marker_daa80169a3d9a6f0e2182372aa12831a = L.circleMarker(
+                [37.0902, -95.7129],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_ecdc82b372ca74ac7b54cefd59f058fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7ac396d0330ec0728845ab55441fd61 = $(`<div id="html_d7ac396d0330ec0728845ab55441fd61" style="width: 100.0%; height: 100.0%;">         <strong>United States</strong><br>         Estimated Ozone: 350 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for northern mid-to-high latitude         </div>`)[0];
+                popup_ecdc82b372ca74ac7b54cefd59f058fd.setContent(html_d7ac396d0330ec0728845ab55441fd61);
+            
+        
+
+        circle_marker_daa80169a3d9a6f0e2182372aa12831a.bindPopup(popup_ecdc82b372ca74ac7b54cefd59f058fd)
+        ;
+
+        
+    
+    
+            var circle_marker_6893d542370551aa33a1726c421ab21e = L.circleMarker(
+                [-32.5228, -55.7658],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_9ee93af92434f483c5f4ff86e9977082 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4bb61d69997487c4d8d5f1bb2445eca = $(`<div id="html_f4bb61d69997487c4d8d5f1bb2445eca" style="width: 100.0%; height: 100.0%;">         <strong>Uruguay</strong><br>         Estimated Ozone: 340 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for southern mid-to-high latitude         </div>`)[0];
+                popup_9ee93af92434f483c5f4ff86e9977082.setContent(html_f4bb61d69997487c4d8d5f1bb2445eca);
+            
+        
+
+        circle_marker_6893d542370551aa33a1726c421ab21e.bindPopup(popup_9ee93af92434f483c5f4ff86e9977082)
+        ;
+
+        
+    
+    
+            var circle_marker_d4edacf612451b903e2a2cf21278534a = L.circleMarker(
+                [6.4238, -66.5897],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_04d5962d23806c400c1da2028ae88069 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6cd3705db2d630e5460b700d8f8ed06 = $(`<div id="html_c6cd3705db2d630e5460b700d8f8ed06" style="width: 100.0%; height: 100.0%;">         <strong>Venezuela</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_04d5962d23806c400c1da2028ae88069.setContent(html_c6cd3705db2d630e5460b700d8f8ed06);
+            
+        
+
+        circle_marker_d4edacf612451b903e2a2cf21278534a.bindPopup(popup_04d5962d23806c400c1da2028ae88069)
+        ;
+
+        
+    
+    
+            var circle_marker_7bfbc5ae538ebe1425641f0bd4525aec = L.circleMarker(
+                [14.0583, 108.2772],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_7df03542da91370843218f324f20bb50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6830e6d6db01bcb2ce79e8c5d2b3cdf = $(`<div id="html_f6830e6d6db01bcb2ce79e8c5d2b3cdf" style="width: 100.0%; height: 100.0%;">         <strong>Vietnam</strong><br>         Estimated Ozone: 250 DU<br>         Zone: Moderate 🟠<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_7df03542da91370843218f324f20bb50.setContent(html_f6830e6d6db01bcb2ce79e8c5d2b3cdf);
+            
+        
+
+        circle_marker_7bfbc5ae538ebe1425641f0bd4525aec.bindPopup(popup_7df03542da91370843218f324f20bb50)
+        ;
+
+        
+    
+    
+            var circle_marker_fcdff837fa739bc9b32106055cf8b61b = L.circleMarker(
+                [-19.0154, 29.1549],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_0706836109519e2162b76cb0b81c981a);
+        
+    
+        var popup_063e18e463d42f6b6cb40865c9296859 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bef0c1c640aa3d0768b42a5853893e7b = $(`<div id="html_bef0c1c640aa3d0768b42a5853893e7b" style="width: 100.0%; height: 100.0%;">         <strong>Zimbabwe</strong><br>         Estimated Ozone: 260 DU<br>         Zone: Safe 🟢<br>         Notes: Estimated for equatorial region         </div>`)[0];
+                popup_063e18e463d42f6b6cb40865c9296859.setContent(html_bef0c1c640aa3d0768b42a5853893e7b);
+            
+        
+
+        circle_marker_fcdff837fa739bc9b32106055cf8b61b.bindPopup(popup_063e18e463d42f6b6cb40865c9296859)
+        ;
+
+        
+    
+</script>
+</html>
