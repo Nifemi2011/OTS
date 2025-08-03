@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OTS Knowledge Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0f111a; color: #f0f8ff; font-family: system-ui, sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen p-6">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold mb-4">OTS Knowledge Portal</h1>
+    <p class="text-gray-300 mb-6">Search for key topics like Machine Learning, Aerospace, Swarm AI, and Drones to get a quick breakdown.</p>
+    
+    <!-- Search Bar -->
+    <input id="searchBox" type="text" placeholder="Search a topic..." class="w-full p-2 mb-4 rounded bg-gray-800 border border-gray-600 text-white" />
+
+    <!-- Results -->
+    <div id="results" class="space-y-4"></div>
+  </div>
+
+  <script>
+    const topics = [
+      {
+        keyword: "machine learning",
+        title: "Machine Learning",
+        description: "Machine Learning (ML) is a branch of artificial intelligence that focuses on training algorithms to learn from and make predictions or decisions based on data. Common applications include image recognition, speech processing, and predictive analytics."
+      },
+      {
+        keyword: "aerospace",
+        title: "Aerospace",
+        description: "Aerospace engineering involves the design, development, and testing of aircraft, spacecraft, and related systems. It combines disciplines such as aerodynamics, propulsion, avionics, and materials science."
+      },
+      {
+        keyword: "swarm ai",
+        title: "Swarm AI",
+        description: "Swarm AI refers to the use of multiple autonomous agents working together, inspired by natural swarms such as ants, bees, or birds. In technology, it can involve drones, robots, or software agents collaborating to solve complex problems."
+      },
+      {
+        keyword: "drones",
+        title: "Drone Technology",
+        description: "Drones, or unmanned aerial vehicles (UAVs), are aircraft without onboard human pilots. They can be controlled remotely or operate autonomously using onboard sensors and software. Applications range from delivery and mapping to environmental monitoring."
+      }
+    ];
+
+    const searchBox = document.getElementById('searchBox');
+    const resultsDiv = document.getElementById('results');
+
+    function renderResults(query) {
+      resultsDiv.innerHTML = "";
+      const matches = topics.filter(t => t.keyword.includes(query.toLowerCase()) || t.title.toLowerCase().includes(query.toLowerCase()));
+      
+      if (matches.length === 0 && query !== "") {
+        resultsDiv.innerHTML = `<p class="text-gray-400">No results found for "${query}"</p>`;
+        return;
+      }
+      
+      matches.forEach(topic => {
+        const el = document.createElement('div');
+        el.className = "bg-gray-800 p-4 rounded shadow";
+        el.innerHTML = `
+          <h2 class="text-xl font-bold mb-2">${topic.title}</h2>
+          <p class="text-gray-300">${topic.description}</p>
+        `;
+        resultsDiv.appendChild(el);
+      });
+    }
+
+    searchBox.addEventListener('input', (e) => {
+      renderResults(e.target.value);
+    });
+
+    // show all by default
+    renderResults('');
+  </script>
+</body>
+</html>
 
