@@ -4,76 +4,424 @@
   <meta charset="UTF-8" />
   <title>OTS Knowledge Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background: #0f111a; color: #f0f8ff; font-family: system-ui, sans-serif; }
+    body {
+      background: #0f111a;
+      color: #f0f8ff;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .pill {
+      background: #1f2a40;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.65rem;
+      display: inline-block;
+      margin-right: 4px;
+    }
+    .collapse-toggle {
+      cursor: pointer;
+    }
   </style>
 </head>
 <body class="min-h-screen p-6">
-  <div class="max-w-3xl mx-auto">
-    <h1 class="text-3xl font-bold mb-4">OTS Knowledge Portal</h1>
-    <p class="text-gray-300 mb-6">Search for key topics like Machine Learning, Aerospace, Swarm AI, and Drones to get a quick breakdown.</p>
-    
-    <!-- Search Bar -->
-    <input id="searchBox" type="text" placeholder="Search a topic..." class="w-full p-2 mb-4 rounded bg-gray-800 border border-gray-600 text-white" />
+  <div class="max-w-5xl mx-auto">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-1">OTS Knowledge Portal</h1>
+      <p class="text-gray-300">Search and explore structured breakdowns of technical domains like Machine Learning, Aerospace, Swarm AI, and more. No accounts. Instant client-side search.</p>
+    </header>
+
+    <!-- Search -->
+    <div class="mb-6">
+      <input id="searchBox" type="text" placeholder="Search topics (e.g., machine learning, drones, swarm ai)" class="w-full p-3 rounded bg-gray-800 border border-gray-600 placeholder-gray-400 text-white" />
+    </div>
 
     <!-- Results -->
-    <div id="results" class="space-y-4"></div>
+    <div id="results" class="space-y-8"></div>
   </div>
 
   <script>
+    // ===== Data structure =====
     const topics = [
       {
         keyword: "machine learning",
         title: "Machine Learning",
-        description: "Machine Learning (ML) is a branch of artificial intelligence that focuses on training algorithms to learn from and make predictions or decisions based on data. Common applications include image recognition, speech processing, and predictive analytics."
+        overview: "Machine Learning (ML) is a branch of artificial intelligence focused on building systems that learn patterns from data to make predictions or take actions. It spans supervised, unsupervised, reinforcement, and deep learning.",
+        sections: [
+          {
+            heading: "🧠 Core Concepts",
+            items: [
+              {
+                title: "Supervised Learning",
+                explanation: "Algorithms learn from labeled data (inputs paired with correct outputs) to make predictions on new inputs."
+              },
+              {
+                title: "Linear & Polynomial Regression",
+                explanation: "Methods for modeling the relationship between inputs and a continuous output. Polynomial extends linear by adding powered terms."
+              },
+              {
+                title: "Logistic Regression",
+                explanation: "Used for binary classification; models probability that an input belongs to a category."
+              },
+              {
+                title: "Decision Trees & Random Forests",
+                explanation: "Tree-based models splitting data by feature thresholds. Random Forest averages many trees to improve robustness."
+              },
+              {
+                title: "Support Vector Machines (SVM)",
+                explanation: "Finds the boundary that best separates classes in transformed feature space, maximizing margin."
+              },
+              {
+                title: "Naive Bayes",
+                explanation: "Probabilistic classifier based on Bayes' theorem assuming feature independence."
+              },
+              {
+                title: "K-Nearest Neighbors (KNN)",
+                explanation: "Classifies new points based on the majority label among nearest training examples."
+              },
+              {
+                title: "Unsupervised Learning",
+                explanation: "Finds patterns in unlabeled data, such as clustering or dimensionality reduction."
+              },
+              {
+                title: "K-Means Clustering",
+                explanation: "Partitions data into k groups by minimizing distance to cluster centroids."
+              },
+              {
+                title: "Hierarchical Clustering",
+                explanation: "Builds nested clusters either bottom-up (agglomerative) or top-down (divisive)."
+              },
+              {
+                title: "Principal Component Analysis (PCA)",
+                explanation: "Reduces dimensionality by projecting data onto orthogonal directions of maximum variance."
+              },
+              {
+                title: "DBSCAN",
+                explanation: "Density-based clustering that finds arbitrarily shaped clusters and noise."
+              },
+              {
+                title: "Reinforcement Learning",
+                explanation: "Agent learns to make decisions by receiving rewards or penalties from interactions with an environment."
+              },
+              {
+                title: "Q-Learning",
+                explanation: "Model-free RL method that learns a value function mapping state-action pairs to expected rewards."
+              },
+              {
+                title: "Deep Q Networks (DQN)",
+                explanation: "Uses deep neural networks to approximate Q-values in reinforcement learning."
+              },
+              {
+                title: "Policy Gradient Methods",
+                explanation: "Directly optimize the policy (action distribution) using gradient ascent on expected reward."
+              }
+            ]
+          },
+          {
+            heading: "🧰 Python Libraries",
+            items: [
+              {
+                title: "Scikit-learn",
+                explanation: "Classic ML library offering algorithms, preprocessing, and evaluation tools."
+              },
+              {
+                title: "TensorFlow & Keras",
+                explanation: "Frameworks for building and training deep neural networks; Keras provides high-level APIs."
+              },
+              {
+                title: "PyTorch",
+                explanation: "Deep learning library emphasizing dynamic computation graphs and flexibility."
+              },
+              {
+                title: "XGBoost & LightGBM",
+                explanation: "High-performance gradient boosting libraries for structured/tabular data."
+              },
+              {
+                title: "Pandas & NumPy",
+                explanation: "Data manipulation and numerical computation foundations."
+              },
+              {
+                title: "Matplotlib & Seaborn",
+                explanation: "Visualization libraries for plotting results and exploring data."
+              }
+            ]
+          },
+          {
+            heading: "🧪 Data Handling & Preprocessing",
+            items: [
+              {
+                title: "Data Cleaning & Imputation",
+                explanation: "Fixing or filling missing/corrupted values in datasets."
+              },
+              {
+                title: "Feature Scaling",
+                explanation: "Standardization and normalization to ensure features have comparable ranges."
+              },
+              {
+                title: "Label Encoding & One-Hot Encoding",
+                explanation: "Converting categorical variables into numerical representations."
+              },
+              {
+                title: "Handling Imbalanced Data",
+                explanation: "Techniques like SMOTE or undersampling to correct skewed class distributions."
+              }
+            ]
+          },
+          {
+            heading: "📊 Model Evaluation & Tuning",
+            items: [
+              {
+                title: "Cross-Validation",
+                explanation: "Splitting data to evaluate model stability across folds."
+              },
+              {
+                title: "Confusion Matrix, ROC-AUC, Precision/Recall",
+                explanation: "Metrics to assess classification performance from different perspectives."
+              },
+              {
+                title: "GridSearchCV & RandomizedSearchCV",
+                explanation: "Systematic hyperparameter tuning to find best model settings."
+              },
+              {
+                title: "Bias-Variance Tradeoff",
+                explanation: "Understanding overfitting vs underfitting and balancing model complexity."
+              }
+            ]
+          },
+          {
+            heading: "🔬 Advanced Topics",
+            items: [
+              {
+                title: "Ensemble Methods",
+                explanation: "Combining multiple models (bagging, boosting, voting) to improve accuracy."
+              },
+              {
+                title: "Dimensionality Reduction",
+                explanation: "Techniques to reduce feature space while retaining signal."
+              },
+              {
+                title: "Time Series Forecasting",
+                explanation: "Models that predict future values based on temporal data patterns."
+              },
+              {
+                title: "NLP (Transformers, Word2Vec)",
+                explanation: "Processing and understanding human language using embeddings and deep architectures."
+              },
+              {
+                title: "Explainable AI (XAI)",
+                explanation: "Tools and methods to interpret and explain model decisions."
+              },
+              {
+                title: "Federated Learning",
+                explanation: "Training models across decentralized devices without centralized data gathering."
+              },
+              {
+                title: "Adversarial ML",
+                explanation: "Studying model vulnerabilities to input perturbations designed to deceive."
+              },
+              {
+                title: "Self-Supervised Learning",
+                explanation: "Learning useful representations from unlabeled data via proxy tasks."
+              }
+            ]
+          }
+        ]
       },
       {
         keyword: "aerospace",
-        title: "Aerospace",
-        description: "Aerospace engineering involves the design, development, and testing of aircraft, spacecraft, and related systems. It combines disciplines such as aerodynamics, propulsion, avionics, and materials science."
+        title: "Aerospace Engineering",
+        overview: "Aerospace combines aeronautical and astronautical engineering, involving the design and development of aircraft and spacecraft.",
+        sections: [
+          {
+            heading: "✈️ Subdomains",
+            items: [
+              {
+                title: "Aerodynamics",
+                explanation: "Study of airflow around bodies; critical for lift and drag analysis."
+              },
+              {
+                title: "Propulsion",
+                explanation: "Design of engines and thrust systems for air and space travel."
+              },
+              {
+                title: "Avionics",
+                explanation: "Electronic systems used for navigation, communication, and control."
+              },
+              {
+                title: "Materials Science",
+                explanation: "Selection of lightweight, heat-resistant materials for air/spacecraft."
+              }
+            ]
+          }
+        ]
       },
       {
         keyword: "swarm ai",
-        title: "Swarm AI",
-        description: "Swarm AI refers to the use of multiple autonomous agents working together, inspired by natural swarms such as ants, bees, or birds. In technology, it can involve drones, robots, or software agents collaborating to solve complex problems."
-      },
-      {
-        keyword: "drones",
-        title: "Drone Technology",
-        description: "Drones, or unmanned aerial vehicles (UAVs), are aircraft without onboard human pilots. They can be controlled remotely or operate autonomously using onboard sensors and software. Applications range from delivery and mapping to environmental monitoring."
+        title: "Swarm AI & Multi-Agent Systems",
+        overview: "Swarm AI is inspired by natural collective behavior; multiple autonomous agents cooperate to solve problems.",
+        sections: [
+          {
+            heading: "🔗 Concepts",
+            items: [
+              {
+                title: "Decentralization",
+                explanation: "No single leader; agents make local decisions that lead to global behavior."
+              },
+              {
+                title: "Emergence",
+                explanation: "Complex system-level behavior arising from simple agent rules."
+              },
+              {
+                title: "Consensus Algorithms",
+                explanation: "Methods for agents to agree on shared state or decision."
+              }
+            ]
+          },
+          {
+            heading: "🚁 Applications (including drones)",
+            items: [
+              {
+                title: "Cooperative Mapping",
+                explanation: "Multiple drones build a common environmental map faster than one."
+              },
+              {
+                title: "Distributed Sensing",
+                explanation: "Sensors spread across swarm collect data collaboratively."
+              },
+              {
+                title: "Formation Control",
+                explanation: "Maintaining geometrical patterns for navigation or coverage."
+              }
+            ]
+          }
+        ]
       }
     ];
 
-    const searchBox = document.getElementById('searchBox');
-    const resultsDiv = document.getElementById('results');
+    // ===== rendering logic =====
+    const resultsDiv = document.getElementById("results");
+    const searchBox = document.getElementById("searchBox");
 
-    function renderResults(query) {
+    function highlight(text, query) {
+      if (!query) return text;
+      const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "gi");
+      return text.replace(regex, '<span class="bg-yellow-300 text-black rounded px-1">$1</span>');
+    }
+
+    function renderTopic(topic, query) {
+      const container = document.createElement("div");
+      container.className = "bg-gray-900 p-6 rounded-lg shadow";
+
+      // Title & overview
+      container.innerHTML = `
+        <div class="mb-2">
+          <h2 class="text-2xl font-bold">${highlight(topic.title, query)}</h2>
+          <p class="text-gray-300">${highlight(topic.overview, query)}</p>
+        </div>
+      `;
+
+      // Sections
+      topic.sections.forEach((sec, si) => {
+        const sectionWrapper = document.createElement("div");
+        sectionWrapper.className = "mt-4";
+
+        // heading with collapse
+        const heading = document.createElement("div");
+        heading.className = "flex justify-between items-center mb-1";
+        const titleDiv = document.createElement("div");
+        titleDiv.innerHTML = `<div class="text-xl font-semibold">${sec.heading}</div>`;
+        const toggleBtn = document.createElement("div");
+        toggleBtn.className = "text-sm text-gray-400 cursor-pointer";
+        toggleBtn.textContent = "Hide";
+        let expanded = true;
+
+        toggleBtn.onclick = () => {
+          expanded = !expanded;
+          contentArea.style.display = expanded ? "block" : "none";
+          toggleBtn.textContent = expanded ? "Hide" : "Show";
+        };
+
+        heading.appendChild(titleDiv);
+        heading.appendChild(toggleBtn);
+        sectionWrapper.appendChild(heading);
+
+        const contentArea = document.createElement("div");
+        contentArea.className = "grid grid-cols-1 md:grid-cols-2 gap-4";
+
+        sec.items.forEach((item) => {
+          const card = document.createElement("div");
+          card.className = "bg-gray-800 p-4 rounded";
+          card.innerHTML = `
+            <div class="font-semibold mb-1">${highlight(item.title, query)}</div>
+            <div class="text-sm text-gray-300">${highlight(item.explanation, query)}</div>
+          `;
+          contentArea.appendChild(card);
+        });
+
+        sectionWrapper.appendChild(contentArea);
+        container.appendChild(sectionWrapper);
+      });
+
+      return container;
+    }
+
+    function runSearch(q) {
       resultsDiv.innerHTML = "";
-      const matches = topics.filter(t => t.keyword.includes(query.toLowerCase()) || t.title.toLowerCase().includes(query.toLowerCase()));
-      
-      if (matches.length === 0 && query !== "") {
-        resultsDiv.innerHTML = `<p class="text-gray-400">No results found for "${query}"</p>`;
+      const trimmed = q.trim().toLowerCase();
+      if (!trimmed) {
+        // show all key topics summary cards
+        topics.forEach((t) => {
+          const summary = document.createElement("div");
+          summary.className = "bg-gray-800 p-4 rounded flex flex-col md:flex-row gap-4";
+          summary.innerHTML = `
+            <div class="flex-grow">
+              <h3 class="text-xl font-bold">${t.title}</h3>
+              <p class="text-gray-300">${t.overview}</p>
+            </div>
+            <div class="flex-none flex items-center">
+              <div class="pill">${t.keyword}</div>
+            </div>
+          `;
+          summary.onclick = () => {
+            searchBox.value = t.keyword;
+            runSearch(t.keyword);
+          };
+          resultsDiv.appendChild(summary);
+        });
         return;
       }
-      
-      matches.forEach(topic => {
-        const el = document.createElement('div');
-        el.className = "bg-gray-800 p-4 rounded shadow";
-        el.innerHTML = `
-          <h2 class="text-xl font-bold mb-2">${topic.title}</h2>
-          <p class="text-gray-300">${topic.description}</p>
-        `;
-        resultsDiv.appendChild(el);
+
+      // find topics whose keyword/title/overview includes query
+      const matched = topics.filter(t => {
+        return (
+          t.keyword.includes(trimmed) ||
+          t.title.toLowerCase().includes(trimmed) ||
+          t.overview.toLowerCase().includes(trimmed)
+        );
+      });
+
+      if (matched.length === 0) {
+        resultsDiv.innerHTML = `<div class="text-gray-400">No topics found for "<strong>${q}</strong>". Try variations like "ML", "swarm", "aerospace".</div>`;
+        return;
+      }
+
+      matched.forEach(t => {
+        resultsDiv.appendChild(renderTopic(t, trimmed));
       });
     }
 
-    searchBox.addEventListener('input', (e) => {
-      renderResults(e.target.value);
-    });
+    // initial
+    runSearch("");
 
-    // show all by default
-    renderResults('');
+    searchBox.addEventListener("input", (e) => {
+      runSearch(e.target.value);
+    });
   </script>
 </body>
 </html>
